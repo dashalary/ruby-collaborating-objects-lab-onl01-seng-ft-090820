@@ -6,10 +6,10 @@ attr_accessor :path
   end 
   
   def files
-  files = Dir.entries(path).select { |f| f.end_with?("mp3") }
+  filenames = Dir.entries(path).select { |f| f.end_with?("mp3") }
   end
   
-  def import
+  def import(filenames)
     
     
   end

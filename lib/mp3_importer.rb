@@ -7,7 +7,7 @@ attr_accessor :path
   
   def files
   # @path = "./spec/fixtures/mp3s"
-  Dir.entries(path).select { |f| f }
+  Dir.entries(path).select { |f| f.end_with?("mp3") }
   
   end
   

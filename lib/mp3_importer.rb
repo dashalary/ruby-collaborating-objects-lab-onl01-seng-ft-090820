@@ -10,7 +10,7 @@ attr_accessor :path
   end
   
   def import
-  Song.new_by_filename(path)
+  Song.new_by_filename(filename)
     
   end
   

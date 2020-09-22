@@ -6,7 +6,7 @@ attr_accessor :path
   end 
   
   def files
-  @path = "./spec/fixtures/mp3s"
+  # @path = "./spec/fixtures/mp3s"
   Dir.entries(path).select { |f| f }
   
   

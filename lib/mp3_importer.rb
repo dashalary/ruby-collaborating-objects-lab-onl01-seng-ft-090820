@@ -9,7 +9,7 @@ attr_accessor :path
   Dir.entries(path).select { |f| f.end_with?("mp3") }
   end
   
-  def import(files)
+  def import
   files.each{ |filename| Song.new_by_filename(filename) }
     
   end

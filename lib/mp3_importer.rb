@@ -6,11 +6,11 @@ attr_accessor :path
   end 
   
   def files
-  filenames = Dir.entries(path).select { |f| f.end_with?("mp3") }
+  Dir.entries(path).select { |f| f.end_with?("mp3") }
   end
   
   def import
-  Song.new_by_filename(filenames)
+  Song.new_by_filename(files)
     
   end
   

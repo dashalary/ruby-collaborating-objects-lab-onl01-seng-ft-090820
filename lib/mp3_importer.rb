@@ -9,7 +9,6 @@ attr_accessor :path
   # @path = "./spec/fixtures/mp3s"
   Dir.entries(path).select { |f| f }
   
-  
   end
   
   
